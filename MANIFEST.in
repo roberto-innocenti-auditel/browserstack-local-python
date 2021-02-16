@@ -1,7 +1,6 @@
-LICENSE.txt
-README.md
-setup.cfg
-setup.py
-recursive-include browserstack *.py
-recursive-include tests *.py
-
+include LICENSE.txt
+include README.md
+graft browserstack
+graft tests
+global-exclude __pycache__
+global-exclude *.py[co]
